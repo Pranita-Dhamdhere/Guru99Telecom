@@ -18,13 +18,17 @@ public class AddCustomerFunctionalityStepDef extends BaseClass {
 	}
 
 	@When("User enter Firstname and Lastname and Email and Address and Mobilenumber")
-	public void user_enter_firstname_and_lastname_and_email_and_address_and_mobilenumber() {
+	public void user_enter_firstname_and_lastname_and_email_and_address_and_mobilenumber() throws InterruptedException {
 		customer.addcustFuctionality("Sulbha", "Date", "sulbha@gmail.com", "Shirur", "2345678987");
+		Thread.sleep(5000);
 	}
 
 	@When("User click on Submit button")
-	public void user_click_on_submit_button() {
+	public void user_click_on_submit_button() throws InterruptedException 
+	{
 		customer.clickonSubmit();
+		Thread.sleep(5000);
+		
 	}
 
 	@Then("User capture the customer ID")

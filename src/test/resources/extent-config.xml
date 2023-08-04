@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<theme>
+			Standard
+		</theme>
+		<encoding>
+			UTF-8
+		</encoding>
+		<protocol>
+			https
+		</protocol>
+		<documentTitle>
+			Guru99 Telecom
+		</documentTitle>
+		<reportName>
+			ExtentReport
+		</reportName>
+		<testViewChartLocation>
+			Bottom
+		</testViewChartLocation>
+	</configuration>
+</extentreports>
