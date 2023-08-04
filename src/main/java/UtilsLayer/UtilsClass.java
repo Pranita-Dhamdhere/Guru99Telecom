@@ -28,16 +28,39 @@ public class UtilsClass extends BaseClass {
 		return driver.getTitle();
 	}
 
-	public static void handleRadio(List<WebElement> wb, String value)
+	public static void handleRadio(List<WebElement> wb, String radio)
 
 	{
-		for (WebElement a : wb) {
-			if (a.getText().equals(value)) {
+		for (WebElement a : wb)
+	{
+			if(a.getText().equals(radio))
+			{
+				a.click();
+				break;
+			}
+			
+			
+			
+			
+			
+			/*	String b= null;
+			String c= a.getText();
+			if(radio.equalsIgnoreCase("Done"))
+			{
+				b= "ACTIVE";
+			}
+			else
+			{
+				b= "INACTIVE";
+			}
+			
+			if (b.equalsIgnoreCase(c))
+			{
 				a.click();
 				break;
 
 			}
-		}
+		*/}		
 
 	}
 
